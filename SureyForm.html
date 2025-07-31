@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title"> Survey Form</h1>
+      <p id="description" class="established">Thank you for taking the time to help us improve the platform</p>
+      <form id="survey-form">
+        <fieldset>
+          <label for="name" id="name-label">Name:</label>
+          <input type="text" id="name" placeholder="Enter your name" required>
+          <label for="email" id="email-label">Email:</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+          <label for="number" id="number-label">Age:</label>
+          <input type="number" id="number" placeholder="Enter your age" min="18" max="100" required>
+        </fieldset>
+        
+        <fieldset>
+          <label for="dropdown">Select your class:</label>
+          <select id="dropdown">
+            <option value="">Select a class</option>
+            <option value="2024">Class 2024</option>
+            <option value="2025">Class 2025</option>
+            <option value="2026">Class 2026</option>
+            <option value="2027">Class 2027</option>
+          </select>
+        </fieldset>
+        
+        <fieldset>
+          <label>Gender:</label>
+          <div class="radio-container">
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male" class="radio-label">Male</label>
+          </div>
+          <div class="radio-container">
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female" class="radio-label">Female</label>
+          </div>
+        </fieldset>
+        
+        <fieldset>
+          <label>What skills do you want to build up with us:</label>
+          <div class="checkbox-container">
+            <input type="checkbox" id="web-dev" name="interest" value="web-dev">
+            <label for="web-dev">Web Development</label>
+          </div>
+          <div class="checkbox-container">
+            <input type="checkbox" id="ui-ux" name="interest" value="ui-ux">
+            <label for="ui-ux">UI/UX Design</label>
+          </div>
+          <div class="checkbox-container">
+            <input type="checkbox" id="frontend" name="interest" value="frontend">
+            <label for="frontend">Frontend Development</label>
+          </div>
+          <div class="checkbox-container">
+            <input type="checkbox" id="algo" name="interest" value="algo">
+            <label for="algo">Algorithms and Data Structures</label>
+          </div>
+        </fieldset>
+        
+        <fieldset>
+          <label for="comments">Comments and Suggestions:</label>
+          <textarea id="comments" placeholder="Share your thoughts with us..."></textarea>
+        </fieldset>
+        
+        <fieldset>
+          <button type="submit" id="submit">Submit Survey</button>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
